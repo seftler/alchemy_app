@@ -38,5 +38,5 @@ IV. Build the app
           cf push
 V. Run the app
         1. Go to web app, in my case, it is http://ushahfacedetection.mybluemix.net/.
-        2. Click Guess Who Are You from Image URL, input a image url, for example, https://lh3.googleusercontent.com/-B8jO7AKe1Fw/UOxJEuRSV3I/AAAAAAAAAGA/28e6_kjzmVc/s512-no/Profil%2B7.png, click Submit to check whether the app can recognize this person.
+        2. Click Guess Who Are You from Image URL, input a image url, for example, https://upload.wikimedia.org/wikipedia/commons/5/54/Madhuridixit.jpg click Submit to check whether the app can recognize this person.
 		3. Click Guess Who Are You by Uploading an Image, upload an image (you may find andy.jpg under the Source Code), and check whether the app can guess who he/she is.
