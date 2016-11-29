@@ -1,13 +1,22 @@
 <html>
 <head>
-<title>Guess Who Are You by Uploading an Image</title>
+<title>Lab5web via AlchemyAPI on Bluemix</title>
+<style>
+   body {
+    background-color: #dddddd;
+   }
+   div {
+    background: rgba(0, 170, 238, 0.9);
+    color: #fff;
+    padding: 5px;
+   	display: inline-block;
+   }
+</style>
 </head>
 <body>
 <form enctype="multipart/form-data" method="post" action ="facedetection.php">
 <br>
-<br>
-<br>
-Please upload an image for which you want to guess "Who Are You", then click Upload.
+<div>Please upload an image and click Identification.</div>
 </br>
 <br>
 <br>
@@ -15,7 +24,7 @@ Please upload an image for which you want to guess "Who Are You", then click Upl
 </br>
 </br>
 <br>
-<input type="submit" value="Upload">
+<input type="submit" value="Submit">
 <br>
 </form>
 </body>

@@ -38,7 +38,7 @@ function printResponse($response) {
     if ($status == 'OK') {
         $fcount = count($response['imageFaces']);
         if ($fcount > 0) {
-            echo "Let me say ...";
+            echo "Identification ...";
             echo ("</br>");
             $fitem = $response['imageFaces'][0];
             echo "Gender: <b>";
@@ -55,18 +55,18 @@ function printResponse($response) {
             echo ("</br>");
             echo ("</br>");
             if (array_key_exists('identity', $fitem)) {
-                echo "Emmm, we guess you are <b>";
+                echo "Emmm, the app guesses it is <b>";
                 echo $fitem['identity']['name'];
                 echo "</b> (Confidence: ";
                 echo number_format($fitem['identity']['score'], 2);
                 echo ")";
             } else {
-                echo "However, we do not know who you are exactly...";
+                echo "However, the app does not know who you it is...";
             }
         }
         echo ("</br>");
     } else {
-        echo "Sorry, we are unable to guess who you are, as: ";
+        echo "Sorry, the app is unable to guess who it is: ";
         echo ("</br>");
         echo $response['statusInfo'];
         echo ("</br>");

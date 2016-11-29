@@ -39,14 +39,14 @@ class AlchemyAPI {
 	*/ 
 	public function AlchemyAPI() {
 		//Load the API Key from api_key.txt
-		//$key = trim(file_get_contents("api_key.txt"));
+		$key = trim(file_get_contents("api_key.txt"));
 	
 		// vcap_services Extraction 
         $services_json = json_decode(getenv('VCAP_SERVICES'),true);
         $credential = $services_json["user-provided"][0]["credentials"];
 		
 		// Extract the VCAP_SERVICES variables
-		$key = $credential['apikey'];
+		//$key = $credential['42a8dfa9b1e95621d5d097005443c6844a896fbc'];
 		
 		if (!$key) {
 			//Keys should not be blank
